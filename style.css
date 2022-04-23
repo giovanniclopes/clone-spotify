@@ -1,0 +1,53 @@
+@font-face { font-family: Circular Light; src: url(fonts/circular/CircularStd-Light.otf); } 
+@font-face { font-family: Circular Medium; src: url(fonts/circular/CircularStd-Medium.otf); } 
+@font-face { font-family: Circular Bold; src: url(fonts/circular/CircularStd-Bold.otf); } 
+
+:root {
+    --green: #1ED760;
+    --blue: #2941AB;
+    --purple: #993399;
+    --gray: #121212;
+    --light-gray: #222326;
+
+    --light-font: Circular Light, sans-serif;
+    --medium-font: Circular Medium, sans-serif;
+    --bold-font: Circular Bold, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+header {
+    padding: 20px 90px 20px 80px;
+    background: #000000;
+    font: 1em var(--bold-font);
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-item a {
+    all: unset;
+}
+
+.logo {
+    width: 132px;
+    height: 42px;
+    color: #fff;
+}
