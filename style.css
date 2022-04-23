@@ -236,7 +236,7 @@ nav ul {
           display: flex;
           padding: 50px 80px;
           background: var(--blue) url(icons/icons2.svg);
-          background-size: 132%;
+          background-size: 140%;
           text-align: center;
           justify-content: center;
           align-items: center;
