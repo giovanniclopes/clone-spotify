@@ -112,7 +112,8 @@ nav ul {
 }
 
 #sp-paid h1 {
-  font-size: 2.9em;
+  font-size: 2.7em;
+  width: 550px;
   letter-spacing: 2px;
   margin: 35px 0;
 }
@@ -165,7 +166,8 @@ nav ul {
       }
     #sp-paid h1 {
         font-size: 1.5em;
-        line-height: 60px;
+        width: auto;
+        line-height: 50px;
     }
     .sp-paid-desc-text {
         width: 400px;
