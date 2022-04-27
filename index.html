@@ -10,24 +10,31 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="navlogo">
-                <a href="index.html">
-                    <img src="images/logo.png" class="logo" draggable="false" alt="Spotify logo">
-                </a>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li class="nav-item"><a href="index.html">Premium</a></li>
-                    <li class="nav-item"><a href="">Suporte</a></li>
-                    <li class="nav-item"><a href="">Baixar</a></li>
-                    <li class="nav-item"><a href="">|</a></li>
-                    <li class="nav-item"><a href="">Inscrever-se</a></li>
-                    <li class="nav-item"><a href="">Entrar</a></li>
-                </ul>
+        <a href="index.html" id="logo">
+            <img src="images/logo.png" class="logo" draggable="false" alt="Spotify logo">
+        </a>
+        <nav id="nav">
+            <button aria-label="Abrir menu" id="btn-mobile">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li class="nav-item"><a href="index.html">Premium</a></li>
+                <li class="nav-item"><a href="">Suporte</a></li>
+                <li class="nav-item"><a href="">Baixar</a></li>
+                <li class="nav-item nav-bar">|</li>
+                <li class="nav-item"><a href="">Inscrever-se</a></li>
+                <li class="nav-item"><a href="">Entrar</a></li>
+            </ul>
+            <div class="gamebar">
+              <ul>
+                <button class="btn-gamebar">
+                  <a href="jogar-agora.html">Jogar agora!</a>
+                </button>
+              </ul>
             </div>
         </nav>
-    </header>
+      </header>
+
     <section id="sp-paid">
         <div class="sp-paid-div1">
             <p class="sp-paid-text">Spotify Premium</p>
@@ -90,5 +97,6 @@
             <img src="icons/twitter.png"   class="fot-icon"alt="Twitter logo">
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
