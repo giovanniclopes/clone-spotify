@@ -61,7 +61,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
+  height: 85px;
+  padding: 5px 70px;
   background: #000000;
   color: #ffffff;
 }
@@ -80,6 +81,8 @@ header {
 
 .nav-item {
   text-decoration: none;
+  list-style: none;
+  transition: .4s;
 }
 
 .nav-item a {
@@ -87,29 +90,11 @@ header {
   padding: 15px;
   color: #ffffff;
   text-decoration: none;
+  transition: .4s;
 }
 
 .nav-item a:hover {
   color: var(--green);
-}
-
-.nav-item:active {
-  transform: translateY(5px);
-}
-
-#menu .nav-item::after {    
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  background: currentColor;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-  border-radius: 200px;
-}
-
-#menu .nav-item:hover::after { 
-  width: 100%; 
 }
 
 .mobile-item {
@@ -120,7 +105,13 @@ header {
   display: none;
 }
 
+.login-bar ul {
+  display: flex;
+  margin-left: -40px;
+}
+
 .login {
+  all: unset;
   display: none;
 }
 .logon {
@@ -129,8 +120,10 @@ header {
 
 @media (max-width: 600px) {
   header {
-    padding: 0 10px 0 10px;
-    height: 80px;
+    padding: 0 30px;
+    height: 90px;
+    position: sticky;
+    top: 0;
   }
   #logo {
       width: 50px;
@@ -174,17 +167,8 @@ header {
   .nav-bar {
     display: none;
   }
-  .mobile-item {
-      display: flex;
-      align-items: center;
-      background: var(--color2);
-  }
-  .mobile-item:after {
-      margin-top: 15px;
-      content: url("images/gamepad.png");
-  }
   #btn-mobile {
-      color: var(--color5);
+      color: #ffffff;
       display: flex;
       padding: 10px 20px;
       font-size: 18px;
@@ -192,6 +176,12 @@ header {
       background: none;
       cursor: pointer;
       gap: 10px;
+  }
+  #btn-mobile:hover {
+    color: var(--green);
+  }
+  #btn-mobile:active {
+    color: var(--green);
   }
   #hamburguer {
       color: var(--color5);
