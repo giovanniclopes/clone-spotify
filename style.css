@@ -484,6 +484,13 @@ header {
   
   .footer-list-item {
       list-style: none;
+      transition: .4s;
+      cursor: pointer;
+  }
+
+  .footer-list-item:hover {
+    color: var(--green);
+    transform: scale(102%);
   }
   
   .footer-icons {
@@ -494,14 +501,20 @@ header {
       gap: 15px;
   }
   
-  .fot-icon {
+  .footer-icon {
       background: #717171;
       padding: 15px;
       width: 24px;
       height: 24px;
       border-radius: 50%;
+      transition: .4s;
   }
-  
+
+  .footer-icon:hover {
+    background: var(--green);
+    transform: rotate(20deg) scale(110%);
+  }
+
   @media (max-width: 600px) {
       footer {
           display: -webkit-box;
