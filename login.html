@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.scdn.co/i/_global/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="images/logo.png" class="logo" draggable="false" loading="lazy" alt="Spotify logo">
+        </a>
+        <nav id="nav">
+            <button aria-label="Abrir menu" id="btn-mobile">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li class="nav-item"><a href="index.html">Premium</a></li>
+                <li class="nav-item"><a href="">Suporte</a></li>
+                <li class="nav-item"><a href="">Baixar</a></li>
+                <li class="nav-item nav-bar">|</li>
+                <div class="nav-login">
+                    <li class="logon"><a href="">Inscrever-se</a></li>
+                    <li class="login"><a href="">Entrar</a></li>
+                </div>
+            </ul>
+            <div class="login-bar">
+                <ul>
+                <li class="nav-item"><a href="">Inscrever-se</a></li>
+                <li class="nav-item"><a href="">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="login-block">
+        <div class="social-login">
+            <p>Para continuar, faça login no Spotify.</p>
+            <ul>
+                <li class="social-btn facebook">
+                    <a href=""><button>Continuar com o Facebook</button></a>
+                </li>
+
+                <li class="social-btn apple">
+                    <a href=""><button>Continuar com a Apple</button></a>
+                </li>
+
+                <li class="social-btn google">
+                    <a href=""><button>Continuar com o Google</button></a>
+                </li>
+
+                <li class="social-btn phone">
+                    <a href=""><button>Continuar com um número de Telefone</button></a>
+                </li>
+            </ul>
+        </div>
+        <span class="text-divisor">ou</span>
+        <div id="contact">
+            <form action="#" method="post">
+                <label for="name">Endereço de e-mail ou nome de usuário</label>
+                <input type="text" name="name" class="field" id="name">
+
+                <label for="password">Senha</label>
+                <input type="password" name="password" class="field" id="password">
+                <p>Esqueceu sua senha?</p>
+                <div class="enter-form">
+                    <input type="radio" name="remember" id="remember">
+                    <input type="submit" class="btn-submit" value="Entrar">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
