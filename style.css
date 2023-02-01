@@ -313,7 +313,8 @@ header {
     all: unset;
     margin: 10px 0;
     padding: 17px 30px;
-    background: #000000;
+    background: #000000;  
+    color: #fff;
     border-radius: 50px;
     font-size: .7em;
     text-transform: uppercase;
@@ -648,6 +649,7 @@ header {
   }
   
   .footer-list-item {
+    color: #fff;
       list-style: none;
       transition: .4s;
       cursor: pointer;
@@ -696,6 +698,7 @@ header {
   
   ::-webkit-scrollbar {
       background: var(--gray);
+      width: 8px;
   }
   
   ::-webkit-scrollbar-button {
